@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House list</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" async></script>
+</head>
+<body>
+    <form id="formHouse">
+        <label>Número da residência:</label>
+        <input type="number" id="txtNumber"><br>
+
+        <label>Bairro:</label>
+        <input type="text" id="txtBairro"><br>
+
+        <label>Cidade:</label>
+        <input type="text" id="txtCidade"><br>
+
+        <label>Área da casa:</label>
+        <input type="number" id="txtArea"><br>
+
+        <input type="button" id="btnAdd" value="Adicionar" onclick="createHouse()">
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr style="background-color: rgba(2,3,4, 0.2);">
+                <th>Nº da residência</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Área da casa</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="lista">
+
+        </tbody>
+    </table>
+</body>
+</html>

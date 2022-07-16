@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <h3>Cadastro da liga dos astronautas</h3>
+
+        <form action="">
+            <p><label for="nome">Nome:</label><input type="text" id="nome"></p>
+            
+            <p><label for="email">Email:</label><input type="email" id="email">-<label for="passwd">Password:</label><input type="password" id="passwd"></p>
+            
+            <p><label for="data">Data de nascimento:</label><input type="date" id="data">-<label for="foto">Foto:</label><input type="file" id="foto"></p>
+            
+            <p>
+                <label for="pais">Nacionalidade:</label><input list="paises" max="10" id="pais">
+                <datalist id="paises">
+                    <option value="Russo">
+                    <option value="Alemão">
+                    <option value="Argentino">
+                </datalist>-<label>Gênero:</label>F<input type="radio" name="sexo">M<input type="radio" name="sexo">
+            </p>
+
+            <p>Suas principais qualidades:<br>
+            Inteligência<label for="inteligencia"><input type="checkbox" id="inteligencia"></label>|
+            Resiliência<label for="resiliencia"><input type="checkbox" id="resiliencia"></label>|
+            Preparo Físico<label for="prep"><input type="checkbox" id="prep"></label>|
+            Educação<label for="edu"><input type="checkbox" id="edu"></label>|</p>
+
+            <p><textarea name="" id="" cols="30" rows="10" placeholder="Por que você gostaria de ser um astronauta?"></textarea></p>
+            <input type="submit" value="Criar">
+        </form>
+    </body>
+</html>
